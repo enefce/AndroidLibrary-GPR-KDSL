@@ -6,20 +6,20 @@
 ![License](https://img.shields.io/github/license/enefce/AndroidLibrary-GPR-KDSL?color=2fc544)
 
 
-# Sample Android Library for Publishing to GitHub Package Registry using Kotlin DSL script
+# Sample Android Library for Publishing to GitHub Packages using Kotlin DSL script
 
-  This Android project showcases the steps to publish and consume Android Libraries on the GitHub Package Registry using Kotlin DSL script.
+  This Android project showcases the steps to publish and consume Android Libraries on the GitHub Packages using Kotlin DSL script.
    It is made up of 2 modules 
    
   1. ##### sampleAndroidLib2
    - Android library module with basic functionality
-   - Publishes the generated library file onto the GitHub Package Registry
+   - Publishes the generated library file onto the GitHub Packages
    - The build.gradle.kts file inside this module has the code (plugin, tasks and authentication) related to publishing the library
   2.  #####  app
-   - Sample Android application module with the build.gradle.kts file that shows the code for consuming an Android library from GitHub Package Registry.
+   - Sample Android application module with the build.gradle.kts file that shows the code for consuming an Android library from GitHub Packages.
  
 ------------
-## Publish Android library to GitHub Package Registry
+## Publish Android library to GitHub Packages
 
 ### Step 1 : Generate a Personal Access Token for GitHub
 - Inside you GitHub account:
@@ -96,7 +96,7 @@ publishing {
     }
 }
 ```
-### Step 4 : Publish the Android Library onto GitHub Package Registry
+### Step 4 : Publish the Android Library onto GitHub Packages
 > Make sure to build and run the tasks to generate the library files inside ***build/outputs/aar/*** before proceeding to publish the library.
 
 - Execute the ****Publish**** gradle task which is inside your library module
@@ -109,8 +109,8 @@ $ gradle publish
 	
 
 ------------
-## Using a library from the GitHub Package Registry
-> Currently the GitHub Package Registry requires us to Authenticate to download an Android Library (Public or Private) hosted on the GitHub Package Registry. This might change for future releases
+## Using a library from the GitHub Packages
+> Currently the GitHub Packages requires us to Authenticate to download an Android Library (Public or Private) hosted on the GitHub Packages. This might change for future releases
 
 > Steps 1 and 2 can be skipped if already followed while publishing a library
 
