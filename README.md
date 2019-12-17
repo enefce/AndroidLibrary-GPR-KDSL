@@ -106,7 +106,9 @@ $ gradle publish
 - Once the task is successful you should be able to see the Package under the **Packages** tab of the GitHub Account
 - In case of a failure run the task with *--stacktrace*, *--info* or *--debug* to check the logs for detailed information about the causes.
 	
-
+>NOTE: The library file (aar) will not include the transitive dependencies (i.e.dependencies used by the library).
+For Maven repos, Gradle will download the dependencies using the pom file which will contain the dependencies list.
+In this sample code/project, the pom file generated does not include the nested dependencies list. Either you have to specify the dependencies in your project that uses the library or you'll have to modify the code to generate a pom file with dependencies included while building and publishing the library.
 ------------
 ## Using a library from the GitHub Packages
 > Currently the GitHub Packages requires us to Authenticate to download an Android Library (Public or Private) hosted on the GitHub Packages. This might change for future releases
