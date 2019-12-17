@@ -40,7 +40,7 @@ android {
              *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibrary-GPR-KDSL"
              */
             //url = uri("https://maven.pkg.github.com/UserID/REPOSITORY")
-            url = uri("https://maven.pkg.github.com/prasad79/AndroidLibrary-GPR-KDSL")
+            url = uri("https://maven.pkg.github.com/enefce/AndroidLibrary-GPR-KDSL")
 
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key =PERSONAL_ACCESS_TOKEN**/
