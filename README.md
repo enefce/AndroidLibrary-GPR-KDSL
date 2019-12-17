@@ -48,7 +48,6 @@ plugins {
 }
 ```
 ```markdown
-/**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
 val githubProperties = Properties()
 githubProperties.load(FileInputStream(rootProject.file("github.properties")))
 ```
@@ -131,7 +130,6 @@ $ gradle publish
 ### Step 3 : Update build.gradle.kts inside the application module
 - Add the following code to **build.gradle.kts** inside the application module that will be using the library published on GitHub Packages Repository
 ```markdown
-/**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
 val githubPropertiesFile = rootProject.file("github.properties");
 val githubProperties = Properties()
 githubProperties.load(FileInputStream(githubPropertiesFile))
@@ -145,9 +143,8 @@ githubProperties.load(FileInputStream(githubPropertiesFile))
              *  Replace UserID with package owner userID and REPOSITORY with the repository name
              *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibrary-GPR-KDSL"
              */
-            //url = uri("https://maven.pkg.github.com/UserID/REPOSITORY")
-            url = uri("https://maven.pkg.github.com/enefce/AndroidLibrary-GPR-KDSL")
-
+            url = uri("https://maven.pkg.github.com/UserID/REPOSITORY")
+	    
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key =PERSONAL_ACCESS_TOKEN**/
                 username = githubProperties["gpr.usr"] as String? ?: System.getenv("GPR_USER")
