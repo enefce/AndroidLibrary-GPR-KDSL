@@ -166,8 +166,6 @@ dependencies {
 ```
 
 
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fenefce%2FAndroidLibrary-GPR-KDS.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fenefce%2FAndroidLibrary-GPR-KDS?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fenefce%2FAndroidLibrary-GPR-KDSL.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fenefce%2FAndroidLibrary-GPR-KDSL?ref=badge_large)
 
 
